@@ -1,0 +1,97 @@
+/*Acaymo Estévez Boeta 1DAMB*/
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: linear-gradient(45deg, black, gray);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+header h2{
+    display: inline-block;
+    color: white;
+    margin: 0 2%;
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+}
+li{
+    display: inline-block;
+}
+li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+li:hover{
+    background-color: white;
+    transition: all 1s ease-in;
+}
+li a:hover{
+    color: black;
+    transition: all 1s ease-in;
+}
+.activo{
+    background-color: rosybrown;
+}
+.contenedor, input{
+    display: none;
+}
+@media screen and (max-width: 1024px){
+    .contenedor{
+        display: flex;
+    }
+    .contenedor *{
+        margin: 0;
+        padding: 0;
+    }
+    .contenedor a{
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: 20px 3000px;
+        margin: 0;
+        border-radius: 10px;
+    }
+    .contenedor .activo{
+        color: black;
+        background-color: white;
+    }
+    .ulmenu{
+        display: none;
+    }
+    .imagen{
+        width: 50px;
+        height: 50px;
+    }
+    label{
+        cursor: pointer;
+    }
+    .navmenu{
+        position: fixed;
+        top: 55px;
+        bottom: 0;
+        background-color: rosybrown;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        z-index: 4;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .input:checked + .navmenu{
+        clip-path: circle(100% at center);
+    }
+}

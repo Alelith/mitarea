@@ -1,0 +1,150 @@
+/*Acaymo Estévez Boeta 1DAMB*/
+section{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    font-size: 200%;
+}
+.mispan{
+    display: block;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px black solid;
+    padding: 2%;
+    text-align: center;
+    opacity: 85%;
+}
+.contenido{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    color: black;
+    font-weight: bold;
+    height: 500px;
+    width: 700px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+p+p{
+    margin: 1% 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p1{
+    height: 200px;
+    border-bottom: gray 1px solid;
+}
+.p1 .mispan{
+    background: none;
+    border: none;
+}
+.p2{
+    background-image: url("../img/15.jpg");
+}
+.p3{
+    background-image: url("../img/30.jpg");
+}
+.p4{
+    background-image: url("../img/21.jpg");
+}
+div{
+    margin: 0 auto;
+}
+li.gal{
+    list-style: none;
+    font-size: larger;
+}
+.slider {
+	width: 50%;
+	margin-top: auto;
+	overflow: hidden;
+}
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slider 6s infinite alternate linear;
+}
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+.slider img {
+	height: 500px;
+    width: 700px;
+}
+.slider img:hover {
+    filter: grayscale(100);
+	transition: all 1s ease-in;
+}
+@keyframes slider {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+footer{
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+}
+h3{
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 2%;
+}
+footer a{
+    margin: 0 auto;
+}
+footer a img{
+    width: 10%;
+    height: 10%;
+}
+@media screen and (max-width: 1024px) and (min-width: 480px){
+    h1{
+        text-align: center;
+        font-size: 200%;
+    }
+    .mispan{
+        display: block;
+        background-color: white;
+        border-radius: 30px;
+        border: 2px black solid;
+        padding: 2%;
+        text-align: center;
+        opacity: 85%;
+    }
+    p{
+        font-size: 75%;
+    }
+    .contenido{
+        display: grid;
+        place-items: center;
+        margin: auto;
+        color: black;
+        font-weight: bold;
+        height: 250px;
+        width: 350px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 5%;
+    }
+    .slider img {
+        height: 250px;
+        width: 350px;
+    }
+}
